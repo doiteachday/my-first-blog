@@ -31,7 +31,8 @@ h4 {
 }
 
 .date {
-    color: #828282;
+    /*color: #828282;*/
+    color: rosybrown;
 }
 
 .save {
