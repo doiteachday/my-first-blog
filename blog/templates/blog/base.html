@@ -12,11 +12,15 @@
 <header class="page-header">
     <div class="container">
         {% if user.is_authenticated %}
+            <a href="{% url 'post_draft_list' %}" class="top-menu">
+                <span class="glyphicon glyphicon-edit">Drafts</span>
+            </a>
             <a href="{% url 'post_new' %}" class="top-menu">
                 {% include './icons/file-earmark-plus.svg' %}
             </a>
         {% endif %}
-        <h1><a href="/">Django Girls Blog</a></h1>
+        <h1><a href="/">刘文九的博客</a></h1>
+        <h2>Live in the moment</h2>
     </div>
 </header>
 <main class="container">
@@ -27,5 +31,8 @@
         </div>
     </div>
 </main>
+<footer class="page-footer">
+    <h2>就当已死的活着，忘我。Always try hard.</h2>
+</footer>
 </body>
 </html>
